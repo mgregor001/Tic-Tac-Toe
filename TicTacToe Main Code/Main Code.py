@@ -25,4 +25,8 @@ btn_7.grid(row=0, column=2, sticky="nsew")
 btn_8.grid(row=1, column=2, sticky="nsew")
 btn_9.grid(row=2, column=2, sticky="nsew")
 
+bool=True
+if bool is True:
+    
+
 window.mainloop()
