@@ -5,35 +5,106 @@ frame.pack()
 window.columnconfigure([0, 1, 2], weight=1, minsize=50)
 window.rowconfigure([0, 1, 2], weight=1, minsize=50)
 
-lbl_amount = tk.Label(master=window, text="")
-lbl_amount.pack()
+Key=True
 
 def handler_1():
     btn_1['text'] += ""
+    while Key is True:
+        btn_1['text'] = 'X'
+        return Key==False
+        break
+    while Key is False:
+        btn_1['text'] = 'o'
+        return Key==True
+        break
 
 def handler_2():
-    lbl_amount['text'] += " "
+    btn_2['text'] += " "
+    while Key==True:
+        btn_2['text'] = 'X'
+        return Key==False
+        break
+    while Key is False:
+        btn_2['text'] = 'o'
+        Key==True
+        break
 
 def handler_3():
-    lbl_amount['text'] += " "
+    btn_3['text'] += " "
+    while Key is True:
+        btn_3['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_3['text'] = 'o'
+        Key==True
+        break
 
 def handler_4():
-    lbl_amount['text'] += " "
+    btn_4['text'] = " "
+    while Key is True:
+        btn_4['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_4['text'] = 'o'
+        Key==True
+        break
 
 def handler_5():
-    lbl_amount['text'] += " "
+    btn_5['text'] = " "
+    while Key is True:
+        btn_5['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_5['text'] = 'o'
+        Key==True
+        break
 
 def handler_6():
-    lbl_amount['text'] += " "
+    btn_6['text'] = " "
+    while Key is True:
+        btn_6['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_6['text'] = 'o'
+        Key==True
+        break
 
 def handler_7():
-    lbl_amount['text'] += " "
+    btn_7['text'] = " "
+    while Key is True:
+        btn_7['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_7['text'] = 'o'
+        Key==True
+        break
 
 def handler_8():
-    lbl_amount['text'] += " "
+    btn_8['text'] = " "
+    while Key is True:
+        btn_8['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_8['text'] = 'o'
+        Key==True
+        break
 
 def handler_9():
-    lbl_amount['text'] += " "
+    btn_9['text'] = " "
+    while Key is True:
+        btn_9['text'] = 'X'
+        Key==False
+        break
+    while Key is False:
+        btn_9['text'] = 'o'
+        Key==True
+        break
 
 btn_1 = tk.Button(master=frame, command=handler_1, width=7, height=3, padx=5, pady=5)
 btn_2 = tk.Button(master=frame, command=handler_2, width=7, height=3, padx=5, pady=5)
@@ -55,8 +126,7 @@ btn_7.grid(row=0, column=2, sticky="nsew")
 btn_8.grid(row=1, column=2, sticky="nsew")
 btn_9.grid(row=2, column=2, sticky="nsew")
 
-bool=True
-# if bool is True:
+
     
 
 window.mainloop()
