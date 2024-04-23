@@ -9,7 +9,7 @@ lbl_amount = tk.Label(master=window, text="")
 lbl_amount.pack()
 
 def handler_1():
-    lbl_amount['text'] += " "
+    btn_1['text'] += ""
 
 def handler_2():
     lbl_amount['text'] += " "
@@ -55,7 +55,7 @@ btn_7.grid(row=0, column=2, sticky="nsew")
 btn_8.grid(row=1, column=2, sticky="nsew")
 btn_9.grid(row=2, column=2, sticky="nsew")
 
-# bool=True
+bool=True
 # if bool is True:
     
 
