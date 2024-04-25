@@ -62,7 +62,7 @@ class TicTacToe:
         if draw:
             self.status_label.config(text="It's a draw!")
         else:
-            winner = 'Player' if self.current_player == 'O' else 'Computer'
+            winner = 'Player' if self.current_player == 'X' else 'Computer'
             self.status_label.config(text=f"{winner} wins!")
 
 if __name__ == "__main__":
