@@ -83,7 +83,7 @@ def on_closing():
     window.destroy()
     
 def single_player():
-    global game_window  # Declare game_window as a global variable
+    global game_window
     window.withdraw()  # Withdraw the main window
     game_window = tk.Toplevel()
     game_window.title("Tic Tac Toe Single-Player")
