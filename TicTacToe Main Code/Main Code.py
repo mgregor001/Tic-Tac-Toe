@@ -80,15 +80,15 @@ class TicTacToe:
 
 def on_closing():
     game_window.destroy()  # Destroy the single player window
-    window.destroy()
+    window.destroy() #Destroys the main window
     
 def single_player():
     global game_window
-    window.withdraw()  # Withdraw the main window
+    window.withdraw()  # hides the main window
     game_window = tk.Toplevel()
     game_window.title("Tic Tac Toe Single-Player")
     game = TicTacToe(game_window)
-    game_window.protocol("WM_DELETE_WINDOW", on_closing)  # Bind the closing event
+    game_window.protocol("WM_DELETE_WINDOW", on_closing)
     game_window.mainloop()
 
 def multi_player():
@@ -314,7 +314,7 @@ frame1.grid(row = 0, column = 0) #Title Window
 window.columnconfigure([0, 1, 2], weight = 1, minsize = 50) #Title Window
 window.rowconfigure([0, 1, 2], weight =1 , minsize = 50) #Title Window
 
-label1 = tk.Label(master = frame1, text = "Welcome to Tic Tac Toe!", font = ("Monaco", 20)) #Title Window
+label1 = tk.Label(master = frame1, text = "Welcome To Tic Tac Toe!", font = ("Monaco", 20)) #Title Window
 label1.grid(row = 0, column = 0, sticky = "nsew") #Title Window
 label2 = tk.Label(master = frame1, text = "Please Select Your Mode:", font = ("Monaco", 20)) #Title Window
 label2.grid(row = 1, column = 0, sticky = "nsew") #Title Window
